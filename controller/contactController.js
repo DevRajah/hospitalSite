@@ -6,25 +6,24 @@ require('dotenv').config();
 //Function to receive emails from potential clients
 const receiveEmail = async (req, res) => {
     try {
-        const { firstName, lastName, email, message } = req.body;
+        const { fullName, email, message } = req.body;
 
-        if (!email || !message || !firstName || !lastName  ) {
+        if (!email || !message || !fullName  ) {
             return res.status(400).json({
-                message: "Please enter your First name, Last name, Email and Message!"
+                message: "Please fill in all fields!"
             })
         }
 
         // Save the message to the database
         const newMessage = new contactModel({
-            firstName,
-            lastName,
+            fullName,
             email,
             message,
         });
 
         // Send email notification to admin
-        const adminEmail = 'kingmicheal1319@gmail.com';
-        const title = 'Email from Client Via Portfolio';
+        const adminEmail = 'Kenthsroy3@gmail.com';
+        const title = 'Email from Client Via  KROY Health, Inc'
 
         await sendMail({
             email: adminEmail,

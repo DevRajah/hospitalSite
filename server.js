@@ -22,10 +22,10 @@ app.use(express.json());
 // app.use(express.static(path.join(__dirname, 'frontend')));
 
 app.get('/', (req, res) => {
-    return res.send("Welcome to My Portfolio!");
+    return res.send("Welcome to Kenthsroy world!");
 })
 
-app.use('/api', router);
+app.use(router);
 
 // Add error handling middleware for JSON parsing errors
 app.use((err, req, res, next) => {
