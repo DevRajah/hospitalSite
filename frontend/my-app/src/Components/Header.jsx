@@ -16,8 +16,8 @@ export default function Header() {
 
   const getLinkClasses = (path) => {
     return pathname === path
-      ? "text-red-500 text-xl"
-      : "text-[#081a1c] text-xl";
+      ? "text-red-500 text-xl hover:text-green-500 border-b-2 border-red-500"
+      : "text-[#081a1c] text-xl hover:text-green-500";
   };
 
   const getButtonClasses = (path) => {
@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <main className="header head">
+    <div className="header head">
       <section className="header-section shadow-lg lg:px-20 px-4">
         <article className="flex justify-between w-full lg:w-32 md:w-11">
           <Link href="/">
@@ -54,7 +54,7 @@ export default function Header() {
           </div>
         </article>
 
-        <article className="header-navs text-[#081a1c] md:hidden lg:text-2xl text-sm">
+        <article className="header-navs md:hidden lg:text-2xl text-sm">
           <Link href="/" className={getLinkClasses("/")}>
             Home
           </Link>
@@ -107,6 +107,6 @@ export default function Header() {
           </article>
         </header>
       )}
-    </main>
+    </div>
   );
 }
