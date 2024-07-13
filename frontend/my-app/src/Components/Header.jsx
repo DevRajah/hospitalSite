@@ -16,7 +16,7 @@ export default function Header() {
 
   const getLinkClasses = (path) => {
     return pathname === path
-      ? "text-red-500 text-xl hover:text-green-500"
+      ? "text-red-500 text-xl hover:text-green-500 border-b-2 border-red-500"
       : "text-[#081a1c] text-xl hover:text-green-500";
   };
 
