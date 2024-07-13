@@ -35,7 +35,7 @@ export const Achivment = () => {
 
   return (
     <section className="Achivment">
-      <main className="Achivment-background"></main>
+      <div className="Achivment-background"></div>
       <div className="h-[100vh] w-full flex justify-center items-center">
         <section className="h-4/5 w-4/6 grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 gap-4 p-4">
           {items.map((item, index) => (
