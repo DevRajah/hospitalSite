@@ -76,9 +76,9 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <main className="fromlocation">
+      <div className="fromlocation">
         <div className="fromlocation-wrapper">
-          <main className="from mb-28">
+          <div className="from mb-28">
             <div className="from-title">
               <h1>Contact Form</h1>
               <hr className="from-line" />
@@ -162,8 +162,8 @@ const Contact = () => {
                 <p className="text-green-500">{successMessage}</p>
               )}
             </form>
-          </main>
-          <main className="location" id="map">
+          </div>
+          <div className="location" id="map">
             <iframe
               style={{ height: "100%", width: "100%" }}
               id="gmap_canvas"
@@ -171,9 +171,9 @@ const Contact = () => {
               frameBorder="0"
               scrolling="no"
             ></iframe>
-          </main>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 };

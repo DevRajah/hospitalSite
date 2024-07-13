@@ -33,7 +33,7 @@ const About = () => {
         </div>
       </header>
       <section className="Portfoilo">
-        <main className="Portfoilo-mainDiv">
+        <div className="Portfoilo-mainDiv">
           <div className="Portfoilo-left">
             <div className="portfoilo-title">
               <p>Message from the CEO</p>
@@ -57,7 +57,7 @@ const About = () => {
               <div className="portfoilo-imageshover"></div>
             </div>
           </div>
-        </main>
+        </div>
       </section>
       <section className="DeliveryLocations bg-[#e6f7f7] py-12">
         <div className="lg:px-14 px-6 text-center">
