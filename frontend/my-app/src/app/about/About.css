@@ -56,7 +56,6 @@
 .About-titlewhat {
   height: 80%;
   width: 30%;
-  margin-top: 2%;
   color: #012f33;
   font-size: 32px;
   text-align: end;
@@ -68,7 +67,6 @@
 .About-titleimage {
   height: 80%;
   width: 10%;
-  margin-top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,13 +167,13 @@ font-size: 18px;
   }
 
 .Portfoilo-mainDiv {
-  height: 90%;
-  width: 100%;
+  height: 100%;
+  width: 60%;
   display: flex;
 }
 
 .Portfoilo-left{
-  width: 35%;
+  width: 50%;
   height:  100%;
   background-color: #102e46;
   display: flex;
@@ -185,16 +183,9 @@ font-size: 18px;
   justify-content: space-between;
 }
 .Portfoilo-middle{
-width: 69%;
+width: 50%;
 height:  100%;
 display: flex;
-}
-
-.Portfoilo-mainContainerright{
-width: 1%;
-height:  100%;
-background-color: #102e46;
-
 }
 
 .portfoilo-title{
@@ -221,7 +212,7 @@ font-size: 16px;
 
 .portfoilo-images{
 height: 100%;
-width: 33.3%;
+width: 100%;
 position: relative;
 
 }

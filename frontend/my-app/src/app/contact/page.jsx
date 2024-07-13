@@ -72,7 +72,7 @@ const Contact = () => {
           </span>
           <span>
             <h1>Email:</h1>
-            <p>kenthsroy3@gmail.com</p>
+            <p>royskenth3@gmail.com</p>
           </span>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Contact = () => {
               onSubmit={formik.handleSubmit}
               className="flex flex-col w-full gap-4 "
             >
-              <p>Name (required)</p>
+              <p>Name </p>
               <div className="flex flex-col w-full">
                 <label htmlFor="fullName">Full Name</label>
                 <input
@@ -111,7 +111,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="flex flex-col w-full">
-                <label htmlFor="email">Email (required)</label>
+                <label htmlFor="email">Email</label>
                 <input
                   className="w-full h-14 border-2 px-4"
                   type="email"
@@ -131,7 +131,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="flex flex-col w-full">
-                <label htmlFor="message">Message (required)</label>
+                <label htmlFor="message">Message</label>
                 <span className="border-2 border-gray-200">
                 <textarea
                   className="w-full h-24 px-4 "
@@ -152,7 +152,7 @@ const Contact = () => {
                 </p>
               </div>
               <button
-                className="bg-green-500 w-28 h-10 text-white mt-5 submit-button"
+                className="bg-green-500 w-28 h-10 text-white lg:mt-5 submit-button"
                 type="submit"
               >
                 {loading ? "Submitting..." : "Submit"}

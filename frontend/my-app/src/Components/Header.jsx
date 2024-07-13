@@ -16,8 +16,8 @@ export default function Header() {
 
   const getLinkClasses = (path) => {
     return pathname === path
-      ? "text-red-500 text-xl"
-      : "text-[#081a1c] text-xl";
+      ? "text-red-500 text-xl hover:text-green-500"
+      : "text-[#081a1c] text-xl hover:text-green-500";
   };
 
   const getButtonClasses = (path) => {
@@ -54,7 +54,7 @@ export default function Header() {
           </div>
         </article>
 
-        <article className="header-navs text-[#081a1c] md:hidden lg:text-2xl text-sm">
+        <article className="header-navs md:hidden lg:text-2xl text-sm">
           <Link href="/" className={getLinkClasses("/")}>
             Home
           </Link>
